@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="images/toolbox.jpg">
+
+    <link rel="stylesheet" href="book.css">
+
+</head>
+<body>
+    
+    <!-- header -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo"> <i class="fas fa-tools"></i> FixHero </a>
+
+        <nav class="navbar">
+
+            <a href="index.html">home</a>
+            <a href="login.html">login</a>
+            <a href="service.html">services</a>
+            <a href="book.html">booking</a>
+
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+
+    </header>
+
+<form action="" method="post">
+  <div class="elem-group">
+    <label for="name">Your Name</label>
+
+    <input type="text" id="name"  name="" placeholder="Enter Your Name" required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Your E-mail</label>
+    <input type="email" id="email" name="" placeholder="Enter Your Email" required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Your Phone</label>
+    <input type="tel" id="phone" name="" placeholder="Enter Your Phone Number" data-mask="0000000000" required>
+  </div>
+  <hr>
+
+  <div class="elem-group inlined">
+    <label for="date">Select Date</label>
+    <input type="date" id="checkin-date" name="" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="time">Select Time</label>
+    <input type="Time" id="checkout-date" name="" required>
+  </div>
+  <div class="elem-group">
+    <label for="service-selection">Select Your Required Service</label>
+    <select id="service-selection" name="" required>
+        <option value="" disabled selected>Choose a Service from the List</option>
+        <option value="">Furniture Assembly</option>
+        <option value="">Interior And Exterior Painting</option>
+        <option value="">Tiling</option>
+        <option value="">Smart Home Upgrades</option>
+        <option value="">Fence And Gate Repair</option>
+        <option value="">Carpentry</option>
+        <option value="">Plumbing</option>
+        <option value="">Wiring</option>
+    </select>
+  </div>
+  <hr>
+  <div class="elem-group">
+    <label for="message">Anything Else?</label>
+    <textarea id="message" name="" placeholder="Tell us anything else that might be important." required></textarea>
+  </div>
+  <button type="submit">Book The Service</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+</body>
+</html>

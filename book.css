@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --primary: #637afa;
+    --secondary: #637afa;
+    --black: #000000;
+    --white: #ffffff;
+    --light-color: #757575;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 5rem;
+}
+
+section {
+    padding: 5rem 7%;
+}
+
+.heading {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.heading span {
+    color: var(--secondary);
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    background: var(--primary);
+    cursor: pointer;
+    font-size: 1.7rem;
+    color: var(--white);
+}
+
+.btn:hover {
+    background: var(--hover);
+}
+
+/* Updated header styles to match login.css */
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.7rem 9%; /* Modified padding */
+    background: var(--primary); /* Changed the background color */
+}
+
+.header.active {
+    background: #637afa; /* Retained the same active background color */
+    padding: 2rem 9%; /* Adjusted padding for the active state */
+}
+
+.header .logo {
+    font-size: 3.2rem; /* Modified font size */
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--black); /* Changed the color */
+}
+
+.header .logo i {
+    color: var(--secondary);
+    padding-right: 0.5rem;
+    color: black;
+}
+
+.header .navbar a {
+    font-size: 2.5rem;
+    color: var(--black); /* Changed the color */
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover {
+    color: black;
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: var(--black); /* Changed the color */
+    display: none;
+}
+body {
+  width: 500px;
+  margin: 0 auto;
+  background: url('images/bg1.jpg') no-repeat fixed center;
+  background-color: #25a8c4;
+  padding: 50px;
+}
+
+div.elem-group {
+  margin: 20px 0;
+  font-size: 15px;
+}
+
+div.elem-group.inlined {
+  width: 49%;
+  display: inline-block;
+  float: left;
+  margin-left: 1%;
+}
+
+label {
+  display: block;
+  font-family: 'Nanum Gothic';
+  background: #637afa;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 1.25em;
+}
+
+input, select, textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  width: 100%;
+  padding: 10px;
+}
+
+div.elem-group.inlined input {
+  width: 95%;
+  display: inline-block;
+}
+
+textarea {
+  height: 250px;
+}
+
+hr {
+  border: 1px dotted #ccc;
+}
+
+button {
+  height: 50px;
+  width: 400px;
+  background: #637afa;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Nanum Gothic';
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 2px solid black;
+}
